@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL PORTFOLIO</title>
+    <style>
+      body {
+        background: #000000;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background: rgba(110, 20, 246, 0.774);
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        text-align: center;
+        font-style: oblique;
+      }
+
+      nav {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .introPage {
+        min-height: 350px;
+        padding: 40px 20px;
+
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+          url("images/home/slide1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-style: oblique;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .about_me {
+        background: url(images/home/slide2.avif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-weight: none;
+        color: rgb(177, 206, 221);
+      }
+      .my_projects {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url(images/home/slide3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 350px;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: right;
+        font-size: 20px;
+        font-weight: none;
+        color: rgb(64, 204, 242);
+      }
+      .learning {
+        min-height: 350px;
+        padding: 40px 20px;
+        background: url(images/home/slide4.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        color: rgb(199, 224, 237);
+      }
+      .interest {
+        min-height: 350px;
+        padding: 40px 20px;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(images/home/slide5.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: flex-end;
+        font-size: 20px;
+        align-items: right;
+        display: flex;
+        color: rgb(123, 201, 247);
+      }
+      .Thor {
+        min-height: 1000px;
+        padding: 40px 20px;
+         box-sizing: border-box;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("images/home/slide5.jpg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        font-style: oblique;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        align-items: top;
+        color: rgb(205, 235, 243);
+        list-style-position: inside;
+}
+      .end {
+        height: 400px;
+        background: rgb(49, 42, 42);
+        color: white;
+        font-family: monospace;
+        font-size: 15px;
+        align-items: left;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PERSONAL PORTFOLIO</h1>
+      <p>DETAILS OF MY OWN</p>
+    </header>
+
+    <nav>
+      <a href="#Home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M12.0001 16.3501C10.8317 16.3501 9.79159 17.1568 9.52644 18.187C9.42319 18.5882 9.0143 18.8297 8.61316 18.7264C8.21202 18.6232 7.97053 18.2143 8.07378 17.8132C8.51909 16.083 10.1864 14.8501 12.0001 14.8501C13.8138 14.8501 15.4811 16.083 15.9264 17.8132C16.0297 18.2143 15.7882 18.6232 15.3871 18.7264C14.9859 18.8297 14.577 18.5882 14.4738 18.187C14.2086 17.1568 13.1685 16.3501 12.0001 16.3501Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.0001 9.25C10.5917 9.25 9.45007 10.3917 9.45007 11.8C9.45007 13.2083 10.5917 14.35 12.0001 14.35C13.4084 14.35 14.5501 13.2083 14.5501 11.8C14.5501 10.3917 13.4084 9.25 12.0001 9.25ZM10.9501 11.8C10.9501 11.2201 11.4202 10.75 12.0001 10.75C12.58 10.75 13.0501 11.2201 13.0501 11.8C13.0501 12.3799 12.58 12.85 12.0001 12.85C11.4202 12.85 10.9501 12.3799 10.9501 11.8Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.0737 1.36292C11.6815 1.20797 12.3185 1.20797 12.9264 1.36292C13.6171 1.53901 14.2313 1.98167 15.1216 2.62331L19.8719 6.0436C20.7563 6.68003 21.3258 7.08991 21.7445 7.62639C22.1145 8.10049 22.3912 8.64056 22.5597 9.21788C22.7504 9.87116 22.7503 10.5728 22.75 11.6624L22.75 16.4326C22.75 17.385 22.75 18.1456 22.6999 18.7598C22.6484 19.3898 22.5404 19.9317 22.2868 20.4294C21.8793 21.2291 21.2292 21.8793 20.4295 22.2867C19.9318 22.5403 19.3899 22.6483 18.7599 22.6998C18.1457 22.75 17.3851 22.75 16.4327 22.75H7.5674C6.615 22.75 5.85441 22.75 5.24016 22.6998C4.61015 22.6483 4.06827 22.5403 3.57057 22.2867C2.77088 21.8793 2.12072 21.2291 1.71325 20.4294C1.45966 19.9317 1.35168 19.3898 1.30021 18.7598C1.25002 18.1456 1.25003 17.385 1.25003 16.4326L1.25002 11.6624C1.24979 10.5728 1.24964 9.87116 1.44035 9.21788C1.60888 8.64056 1.88552 8.10049 2.25556 7.62639C2.67428 7.08991 3.24381 6.68003 4.12813 6.0436L8.87845 2.62331C9.76874 1.98167 10.3829 1.53901 11.0737 1.36292ZM12.5558 2.81643C12.1911 2.72346 11.8089 2.72346 11.4442 2.81643C11.0646 2.91322 10.6941 3.16446 9.63359 3.92802L5.0987 7.19316C4.08798 7.92088 3.7084 8.20289 3.43803 8.54931C3.18484 8.87369 2.99556 9.24321 2.88025 9.63822C2.7571 10.0601 2.75003 10.5329 2.75003 11.7783V16.4C2.75003 17.3924 2.75061 18.0917 2.79523 18.6377C2.83912 19.1749 2.92188 19.4974 3.04976 19.7484C3.31342 20.2659 3.73411 20.6866 4.25156 20.9502C4.50255 21.0781 4.82506 21.1609 5.36231 21.2048C5.90832 21.2494 6.60756 21.25 7.60003 21.25H16.4C17.3925 21.25 18.0917 21.2494 18.6378 21.2048C19.175 21.1609 19.4975 21.0781 19.7485 20.9502C20.266 20.6866 20.6866 20.2659 20.9503 19.7484C21.0782 19.4974 21.1609 19.1749 21.2048 18.6377C21.2494 18.0917 21.25 17.3924 21.25 16.4V11.7783C21.25 10.5329 21.243 10.0601 21.1198 9.63822C21.0045 9.24321 20.8152 8.87369 20.562 8.54931C20.2917 8.20289 19.9121 7.92088 18.9014 7.19316L14.3665 3.92802C13.306 3.16446 12.9355 2.91322 12.5558 2.81643Z"
+            fill="#6C5CE7"
+          ></path>
+        </svg>
+
+        HOME</a
+      >
+
+      <a href="#skills">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2C12.75 2.41421 12.4142 2.75 12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 11.5858 21.5858 11.25 22 11.25C22.4142 11.25 22.75 11.5858 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12C1.25 6.06294 6.06294 1.25 12 1.25Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            d="M10.8507 6.36462C11.2567 6.28222 11.6525 6.5445 11.7349 6.95044C11.8173 7.35637 11.5551 7.75224 11.1491 7.83464C9.20954 8.22836 7.74993 9.94437 7.74993 11.9996C7.74993 14.3468 9.65272 16.2496 11.9999 16.2496C14.0552 16.2496 15.7712 14.79 16.1649 12.8504C16.2473 12.4445 16.6432 12.1822 17.0491 12.2646C17.455 12.347 17.7173 12.7429 17.6349 13.1488C17.1021 15.7737 14.7826 17.7496 11.9999 17.7496C8.82429 17.7496 6.24993 15.1753 6.24993 11.9996C6.24993 9.21694 8.22583 6.89745 10.8507 6.36462Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.3106 9.75001H18.3787C18.9754 9.75001 19.5477 9.51296 19.9697 9.091L22.1036 6.95712C22.7335 6.32716 22.2874 5.25001 21.3964 5.25001H18.75V2.60357C18.75 1.71266 17.6729 1.2665 17.0429 1.89646L14.909 4.03034C14.4871 4.4523 14.25 5.0246 14.25 5.62133V8.68934L11.4697 11.4697C11.1768 11.7626 11.1768 12.2374 11.4697 12.5303C11.7626 12.8232 12.2374 12.8232 12.5303 12.5303L15.3106 9.75001ZM17.25 5.68934V3.81067L15.9697 5.091C15.829 5.23166 15.75 5.42242 15.75 5.62133V7.18934L17.25 5.68934ZM16.8106 8.25001L18.3106 6.75001H20.1893L18.909 8.03034C18.7684 8.171 18.5776 8.25001 18.3787 8.25001H16.8106Z"
+            fill="#6C5CE7"
+          ></path>
+        </svg>
+
+        SKILL
+      </a>
+      <a href="#end">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M13.5 10C13.5 9.58579 13.8358 9.25 14.25 9.25H18.75C19.1642 9.25 19.5 9.58579 19.5 10C19.5 10.4142 19.1642 10.75 18.75 10.75H14.25C13.8358 10.75 13.5 10.4142 13.5 10Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            d="M15.75 13.25C15.3358 13.25 15 13.5858 15 14C15 14.4142 15.3358 14.75 15.75 14.75H18.75C19.1642 14.75 19.5 14.4142 19.5 14C19.5 13.5858 19.1642 13.25 18.75 13.25H15.75Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            d="M8.45005 14.35C7.28164 14.35 6.24154 15.1568 5.97639 16.187C5.87314 16.5881 5.46426 16.8296 5.06312 16.7264C4.66198 16.6231 4.42049 16.2142 4.52373 15.8131C4.96904 14.0829 6.63631 12.85 8.45005 12.85C10.2638 12.85 11.9311 14.0829 12.3764 15.8131C12.4796 16.2142 12.2381 16.6231 11.837 16.7264C11.4359 16.8296 11.027 16.5881 10.9237 16.187C10.6586 15.1568 9.61846 14.35 8.45005 14.35Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.45002 7.25C7.0417 7.25 5.90002 8.39167 5.90002 9.8C5.90002 11.2083 7.0417 12.35 8.45002 12.35C9.85835 12.35 11 11.2083 11 9.8C11 8.39167 9.85835 7.25 8.45002 7.25ZM7.40002 9.8C7.40002 9.2201 7.87013 8.75 8.45002 8.75C9.02992 8.75 9.50002 9.2201 9.50002 9.8C9.50002 10.3799 9.02992 10.85 8.45002 10.85C7.87013 10.85 7.40002 10.3799 7.40002 9.8Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M7.06739 3.25H16.9326C17.8851 3.24999 18.6456 3.24999 19.2599 3.30018C19.8899 3.35165 20.4318 3.45963 20.9295 3.71322C21.7291 4.12068 22.3793 4.77085 22.7868 5.57054C23.0404 6.06824 23.1483 6.61012 23.1998 7.24013C23.25 7.8544 23.25 8.61495 23.25 9.56741V14.4325C23.25 15.385 23.25 16.1456 23.1998 16.7599C23.1483 17.3899 23.0404 17.9318 22.7868 18.4295C22.3793 19.2291 21.7291 19.8793 20.9295 20.2868C20.4318 20.5404 19.8899 20.6484 19.2599 20.6998C18.6456 20.75 17.8851 20.75 16.9327 20.75H7.06737C6.11496 20.75 5.35438 20.75 4.74013 20.6998C4.11012 20.6484 3.56824 20.5404 3.07054 20.2868C2.27085 19.8793 1.62068 19.2291 1.21322 18.4295C0.959634 17.9318 0.85165 17.3899 0.800176 16.7599C0.749989 16.1456 0.749994 15.3851 0.75 14.4326V9.56739C0.749994 8.61494 0.749989 7.8544 0.800176 7.24013C0.85165 6.61012 0.959634 6.06824 1.21322 5.57054C1.62068 4.77085 2.27085 4.12068 3.07054 3.71322C3.56824 3.45963 4.11012 3.35165 4.74013 3.30018C5.3544 3.24999 6.11494 3.24999 7.06739 3.25ZM4.86228 4.79519C4.32503 4.83909 4.00252 4.92184 3.75153 5.04973C3.23408 5.31338 2.81338 5.73408 2.54973 6.25153C2.42184 6.50252 2.33909 6.82503 2.29519 7.36228C2.25058 7.90829 2.25 8.60753 2.25 9.6V14.4C2.25 15.3925 2.25058 16.0917 2.29519 16.6377C2.33909 17.175 2.42184 17.4975 2.54973 17.7485C2.81338 18.2659 3.23408 18.6866 3.75153 18.9503C4.00252 19.0782 4.32503 19.1609 4.86228 19.2048C5.40829 19.2494 6.10753 19.25 7.1 19.25H16.9C17.8925 19.25 18.5917 19.2494 19.1377 19.2048C19.675 19.1609 19.9975 19.0782 20.2485 18.9503C20.7659 18.6866 21.1866 18.2659 21.4503 17.7485C21.5782 17.4975 21.6609 17.175 21.7048 16.6377C21.7494 16.0917 21.75 15.3925 21.75 14.4V9.6C21.75 8.60753 21.7494 7.90829 21.7048 7.36228C21.6609 6.82503 21.5782 6.50252 21.4503 6.25153C21.1866 5.73408 20.7659 5.31338 20.2485 5.04973C19.9975 4.92184 19.675 4.83909 19.1377 4.79519C18.5917 4.75058 17.8925 4.75 16.9 4.75H7.1C6.10753 4.75 5.40829 4.75058 4.86228 4.79519Z"
+            fill="#6C5CE7"
+          ></path>
+        </svg>
+
+        ABOUT
+      </a>
+      <a href="https://github.com/sun-nivas">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.94358 5.25H14.0564C15.8942 5.24998 17.3498 5.24997 18.489 5.40313C19.6614 5.56076 20.6104 5.89288 21.3588 6.64124C22.1071 7.38961 22.4392 8.33855 22.5969 9.51098C22.75 10.6502 22.75 12.1058 22.75 13.9436V14.0564C22.75 15.8942 22.75 17.3498 22.5969 18.489C22.4392 19.6614 22.1071 20.6104 21.3588 21.3588C20.6104 22.1071 19.6614 22.4392 18.489 22.5969C17.3498 22.75 15.8942 22.75 14.0564 22.75H9.94359C8.10583 22.75 6.65019 22.75 5.51098 22.5969C4.33856 22.4392 3.38961 22.1071 2.64124 21.3588C1.89288 20.6104 1.56076 19.6614 1.40314 18.489C1.24997 17.3498 1.24998 15.8942 1.25 14.0564V13.9436C1.24998 12.1058 1.24997 10.6502 1.40314 9.51098C1.56076 8.33855 1.89288 7.38961 2.64124 6.64124C3.38961 5.89288 4.33856 5.56076 5.51098 5.40313C6.65019 5.24997 8.10582 5.24998 9.94358 5.25ZM5.71085 6.88976C4.70476 7.02502 4.12511 7.27869 3.7019 7.7019C3.50952 7.89429 3.35217 8.119 3.22505 8.4014C5.05211 9.58755 6.25261 10.3528 7.26347 10.8578C7.32993 10.5116 7.63442 10.25 8 10.25C8.41421 10.25 8.75 10.5858 8.75 11V11.4579C10.8694 12.0975 13.1306 12.0975 15.25 11.458V11C15.25 10.5858 15.5858 10.25 16 10.25C16.3656 10.25 16.6701 10.5116 16.7365 10.8578C17.7474 10.3528 18.9479 9.58764 20.775 8.40148C20.6479 8.11904 20.4905 7.89431 20.2981 7.7019C19.8749 7.27869 19.2952 7.02502 18.2892 6.88976C17.2615 6.75159 15.9068 6.75 14 6.75H10C8.09318 6.75 6.73851 6.75159 5.71085 6.88976ZM21.1397 9.95311C19.2527 11.1759 17.9585 11.9851 16.75 12.5046V13C16.75 13.4142 16.4142 13.75 16 13.75C15.5913 13.75 15.2589 13.423 15.2502 13.0164C13.1199 13.578 10.8801 13.578 8.74983 13.0164C8.74112 13.423 8.40875 13.75 8 13.75C7.58579 13.75 7.25 13.4142 7.25 13V12.5045C6.0415 11.985 4.74736 11.1758 2.86034 9.95302C2.75136 10.9494 2.75 12.2393 2.75 14C2.75 15.9068 2.75159 17.2615 2.88976 18.2892C3.02502 19.2952 3.27869 19.8749 3.7019 20.2981C4.12511 20.7213 4.70476 20.975 5.71085 21.1102C6.73851 21.2484 8.09318 21.25 10 21.25H14C15.9068 21.25 17.2615 21.2484 18.2892 21.1102C19.2952 20.975 19.8749 20.7213 20.2981 20.2981C20.7213 19.8749 20.975 19.2952 21.1102 18.2892C21.2484 17.2615 21.25 15.9068 21.25 14C21.25 12.2394 21.2486 10.9495 21.1397 9.95311Z"
+            fill="#6C5CE7"
+          ></path>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.9999 2.75C11.0215 2.75 10.187 3.37503 9.87778 4.24993C9.73975 4.64047 9.31126 4.84517 8.92072 4.70713C8.53018 4.56909 8.32549 4.1406 8.46353 3.75007C8.97796 2.29459 10.366 1.25 11.9999 1.25C13.6339 1.25 15.0219 2.29459 15.5364 3.75007C15.6744 4.1406 15.4697 4.56909 15.0792 4.70713C14.6886 4.84517 14.2601 4.64047 14.1221 4.24993C13.8129 3.37503 12.9784 2.75 11.9999 2.75Z"
+            fill="#6C5CE7"
+          ></path>
+        </svg>
+        PROJECTS
+      </a>
+    </nav>
+
+    <section class="introPage">Welcome to my portfolio
+    </section>
+    <hr />
+
+    <section class="about_me" id="Home">
+      <ul type="circle">
+        <h2 style="color:#000000">Education & Career Goals:</h2>
+        <br />
+        I am sabarisrinivas ,I recently completed my 12th standard and am
+        preparing to join engineering through counselling. I am particularly
+        interested in pursuing B.E. Electronics and Computer Engineering (ECM)
+        at Sona College of Technology and aim to build a successful career in
+        the software industry.
+      </ul>
+    </section>
+    <hr />
+
+    <section class="my_projects">
+      <ul type="circle">
+        <h2 style="text-align: right; margin: 20px 0 0 20px ;color:#000000">
+          LEARNING & PROJECT:
+        </h2>
+        <br />
+        I have started learning web development with HTML, built a Student
+        Registration Form entirely by myself, uploaded it to GitHub, and am
+        currently working on creating a personal portfolio website while
+        following a structured learning roadmap.
+      </ul>
+    </section>
+    <hr />
+    <section class="learning">
+      <ul type="circle">
+        <h2 style="color:#000000">LEARNING STYLE:</h2>
+        <br />
+        I prefer understanding concepts in depth rather than memorizing them. I
+        often seek detailed explanations, comparisons, roadmaps, and practical
+        guidance to strengthen my knowledge and improve my problem-solving
+        skills.
+      </ul>
+    </section>
+    <hr />
+    <section class="interest">
+      <ul>
+        <h2 style="text-align: right; margin: 20px 0 0 20px ; color:#000000">
+          INTEREST & PREFERENCE:
+        </h2>
+        <br />
+        I enjoy exploring technology topics such as programming, GitHub, VS
+        Code, Docker, smartphones, and networking. I prefer direct, accurate,
+        and well-verified answers over reassuring or sugar-coated responses and
+        value honesty whenever something is uncertain.
+      </ul>
+    </section>
+    <hr />
+    <section class="Thor" id="skills">
+      
+        <ul type="circle">
+          <h1 style="text-align: center;">SKILLS</h1>
+          <br /><br />
+            <ul type="disc">
+              <h3 style="font-weight:bolder;">🌐Frontend Development:</h3>
+              <br />
+              <li>HTML5 – Creating structured and semantic web pages</li><br>
+              <li>
+                CSS3 – Designing responsive layouts, animations, and styling
+                webpages
+              </li><br>
+              <li>
+                JavaScript – Adding interactivity and dynamic behavior to
+                websites
+              </li><br>
+              <li>
+                Responsive Web Design 
+                – Building websites that work across
+                different screen sizes
+              </li>
+            </ul>
+          <br /><hr><br>
+        <ul type="circle" style="text-align: right; margin: 20px 0 0 20px">
+          <h3  style="text-align: right; margin: 20px 0 0 20px;">💻 Programming Languages:</h3><br>
+          <li>
+            Java – Object-oriented programming and application development
+          </li><br>
+          <li>Python – Basic programming, problem-solving, and scripting</li><br>
+          <li>
+            C Programming – Understanding programming fundamentals and logic
+            building
+          </li><br>
+        </ul>
+    <br><hr><br>
+      
+        <ul type="circle">
+          <h3>🗄️ Database & Backend</h3>
+          <br />
+          <li>SQL – Writing queries and managing databases</li><br>
+          <li>MySQL – Database design and data handling</li><br>
+        </ul>
+    <br /><hr><br>
+  
+        <ul type="circle" style="text-align: right; margin: 20px 0 0 20;">
+          <h3  style="text-align: right; margin: 20px 0 0 20px">🛠️ Tools & Technologies:</h3><br>
+          <li>Git & GitHub – Version control and project management</li><br>
+          <li>Visual Studio Code – Code editing and development environment</li><br>
+          <li>IntelliJ IDEA – Java application development</li><br>
+          <li>
+            Docker – Containerizing applications (learning/working knowledge)
+          </li><br>
+        </ul>
+      <br><hr><br>
+       
+        <h3>SOFT SKILLS:</h3><br>
+        <ul>
+          <li>Problem Solving</li><br>
+          <li>Logical Thinking</li><br>
+          <li>Self Learning</li><br>
+          <li>Team Collaboration</li><br>
+          <li>Time Management</li><br>
+        </ul>
+    
+    </section>
+    <footer class="end" id="end" style="text-align: left">
+      <h2 style="font-family: cursive; text-align: left; margin: 20px 0 0 20px">
+        About
+      </h2>
+      <p>
+        I'm sabarisrinivas, a passionate and self-motivated aspiring Software
+        Developer who enjoys learning new technologies and building practical
+        projects. I believe that the best way to grow as a developer is through
+        continuous learning, hands-on experience, and solving real-world
+        problems. I have built projects using HTML and CSS and I'm currently
+        expanding my knowledge in JavaScript, Java, Python, SQL, Git, and
+        GitHub. My goal is to write clean, efficient, and user-friendly code
+        while continuously improving my technical and problem-solving skills.
+      </p>
+      <ul>
+        CONTACT:
+        <br /><br />
+        9360505726
+      </ul>
+      <br />
+      <ul>
+        EMAIL:
+        <br /><br />
+        sun.nivas.sri@gmail.com
+      </ul>
+      <ul>
+        GITHUB:
+        <br /><br />
+        <a href="https://github.com/sun-nivas"> github.com/sun-nivas</a>
+      </ul>
+    </footer>
+  </body>
+</html>
